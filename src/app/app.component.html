@@ -1,13 +1,15 @@
-<div class="main-container" [ngClass]="{'dark':isNight">
+<div class="main-container" [ngClass]="{'dark': isDark}">
     <button class="btn-change" type="button" (click)="changeMode()">
-      <fa-icon [icon]="btnNightMode"></fa-icon>
+      <fa-icon [icon]="btnDarkMode"></fa-icon>
     </button>
     <div class="minibio">
         <!--src donde se encuentra la imagen en el directorio, mejor que sea enlace.-->
         <img src="assets/images/avatar.jpeg" alt="Cristina Ouellette">
-        <h2>@Chris_Oue</h2>
+        <h3>@Chris_Oue</h3>
         <div class="text">
-            <p>Esta web está hecha con Angular <span>💜</span><br>Aquí están todas mis cuentas oficiales <span>👀</span></p>
+            <p>Esta web está hecha con Angular<br>Aquí están todas mis cuentas oficiales
+                <fa-icon [icon]="faPointer"></fa-icon>
+            </p>
         </div>
     </div>
     <div class="social-box">

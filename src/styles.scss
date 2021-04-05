@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
-$bgColor:#fafafa;
+$white: white;
+$black: black;
+$blue: #0A6B96;
+$purple: #952AA5;
+$fucsia:#d11aff;
 body {
     margin: 0px;
 }
 
 //Para que te haga caso sobre todos los elementos de la página, usamos *.
 * {
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Helvetica', Helvetica;
     text-size-adjust: auto;
 }
