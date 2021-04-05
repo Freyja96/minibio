@@ -1,0 +1,102 @@
+@import '../styles';
+.main-container {
+    background-color: $bgColor;
+    width: 100%;
+    height: 100vh;
+    .minibio {
+        img {
+            width: 154px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+        width: 400px;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px 0;
+        h2 {
+            letter-spacing: 0.05cm;
+            text-align: center;
+            font-weight: 300;
+        }
+        .text {
+            p {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+    .social-box {
+        width: 35%;
+        margin: 0 auto;
+        .link-box {
+            width: 100%;
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 10px, 10px;
+            box-shadow: 0px 0px 10px 4px rgba(197, 197, 197, 0.43);
+            transition: background 0.5s ease;
+            &:hover {
+                .left-item {
+                    color: white;
+                }
+                .right-item {
+                    color: white
+                }
+                background-color: purple;
+            }
+            a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+            }
+            .left-item {
+                transition: all 0.5s ease;
+                font-size: 42px;
+                color: black;
+                float: left;
+                padding: 30px;
+                margin-right: 10px;
+                img {
+                    width: 50px;
+                    height: auto;
+                }
+            }
+            .right-item {
+                transition: all 0.5s ease;
+                padding: 20px;
+                float: right;
+                display: flex;
+                text-align: right;
+            }
+        }
+    }
+}
+
+.main-container.dark {
+    .minibio {
+        .social-box {
+            .link-box {
+                background-color: black;
+                box-shadow: 0px 0px 10px 4px purple;
+                .left-item {
+                    color: pink;
+                }
+                .right-item {
+                    color: white;
+                }
+                &:hover {
+                    .left-item {
+                        color: white;
+                    }
+                    .right-item {
+                        color: white
+                    }
+                    background-color: pink;
+                }
+            }
+        }
+    }
+}

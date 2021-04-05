@@ -1,0 +1,29 @@
+<div class="main-container" [ngClass]="{'dark':isNight">
+    <button class="btn-change" type="button" (click)="changeMode()">
+      <fa-icon [icon]="btnNightMode"></fa-icon>
+    </button>
+    <div class="minibio">
+        <!--src donde se encuentra la imagen en el directorio, mejor que sea enlace.-->
+        <img src="assets/images/avatar.jpeg" alt="Cristina Ouellette">
+        <h2>@Chris_Oue</h2>
+        <div class="text">
+            <p>Esta web está hecha con Angular <span>💜</span><br>Aquí están todas mis cuentas oficiales <span>👀</span></p>
+        </div>
+    </div>
+    <div class="social-box">
+        <div *ngFor="let red of rrss" class="link-box">
+            <a href="{{red.link}}" target="_blank">
+                <div class="box-red">
+                    <div class="left-item">
+                        <fa-icon [icon]="red.img"></fa-icon>
+                    </div>
+                    <div class="right-item">
+                        <p>{{red.text}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
