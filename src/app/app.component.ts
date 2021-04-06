@@ -10,9 +10,6 @@ export class AppComponent {
   title = 'minibio';
   isDark = false;
   btnDarkMode = faMoon;
-  faLinkedin = faLinkedin;
-  faGithub = faGithub;
-  faTwitter = faTwitter;
   faPointer = faHandPointDown;
   //Array con objetos: imagen, párrafo y link
   rrss=[
